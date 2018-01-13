@@ -3,7 +3,7 @@
   We will try to cover all the Java concept implementation here.
   Please contribute to project with following things.
   
-# Problem Statement : 
+## Problem Statement : 
 		Create Java-NGO Java application which will be used by third parties application for creating tutorials.
 		This application will expose api to third party user who want to create tutorial using this platform and want to use.
 		following will be the things , this platform will provide.
@@ -13,3 +13,13 @@
 		
 	  Intention of this project to understand and implement java concept. 
 	  we are using spring boot for quick start of application. This will help everyone to contribute to project easily.
+
+
+
+#### Follow link 
+  https://stormpath.com/blog/tutorial-crud-spring-boot-20-minutes
+
+## Getting Started
+ - git clone git@github.com:rahulkadam/Tutorial-API.git
+ - mvn clean install --Note make sure you have java 8 , mvn install on machine
+ - check Spring boot basic document for more help
