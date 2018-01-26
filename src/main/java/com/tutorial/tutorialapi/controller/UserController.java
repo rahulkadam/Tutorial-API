@@ -3,6 +3,7 @@ package com.tutorial.tutorialapi.controller;
 import com.tutorial.tutorialapi.Repository.UserRepository;
 import com.tutorial.tutorialapi.dao.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -14,6 +15,9 @@ import java.util.List;
 @RequestMapping("/user")
 public class UserController {
 
+
+    @Value("${message:Hello default}")
+    private String message;
 
     @Autowired
     private UserRepository userRepository;
@@ -31,7 +35,7 @@ public class UserController {
     @PostMapping("/create")
     public String createUser(@Valid String userName) {
         userRepository.save(new User(userName));
-        return userName+" Created successfully";
+        return userName+" Created successfully" + message;
     }
 
     @GetMapping("/get/{id}")
